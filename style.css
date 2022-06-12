@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+  background: radial-gradient(circle at center, #311D3F 50%, #522546 100%);
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+}
+
+.border {
+  background: #522546;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 200px auto;
+  transition: 0.5s;
+  border: 5px solid #E23E57;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 5px #88304E;
+}
+
+.header {
+  margin: auto;
+  width: 200px;
+}
+
+.about {
+  width: 450px;
+  float: left;
+  font-size: 18px;
+}
+
+.vl {
+  border-left: 5px solid #88304E;
+  border-radius: 2px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 280px;
+  transition: 0.5s;
+}
+
+img {
+  max-width: 400px;
+  margin: 0 0 0 150px;
+  transition: 0.5s;
+}
+
+.border:hover {
+  box-shadow:
+    0 0 60px 15px #88304E,
+    0 0 100px 30px #E23E57;
+  cursor: pointer;
+}
+
+.border:hover img {
+  box-shadow: 0 0 10px 10px #88304E;
+}
+
+.border:hover .header {
+  text-shadow: 0 0 30px #88304E;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1075px) {
+
+  .border {
+    margin: auto 100px;
+  }
+
+  .about {
+    float: none;
+    margin: 20px auto;
+    width: 500px;
+  }
+
+  .vl {
+    height: 6px;
+    border-left: 300px solid #88304E;
+    border-right: 300px solid #88304E;
+    margin-left: -300px;
+    top: 460px;
+  }
+
+  img {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+
+  .vl {
+    border-left: 250px solid #88304E;
+    border-right: 250px solid #88304E;
+    margin-left: -250px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  
+  .about {
+    width: 300px;
+  }
+
+  .vl {
+    border-left: 150px solid #88304E;
+    border-right: 150px solid #88304E;
+    margin-left: -150px;
+    top: 580px;
+  }
+
+  img {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+  .border {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+
+  .border {
+    margin: 0;
+    padding: 2px;
+  }
+
+  .about {
+    width: 240px;
+  }
+
+  .vl {
+    border-left: 120px solid #88304E;
+    border-right: 120px solid #88304E;
+    margin-left: -120px;
+    top: 585px;
+  }
+}
